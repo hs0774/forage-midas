@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class TransactionListener {
     @KafkaListener(topics = "${general.kafka-topic}")
     public void listen(Transaction transaction) {
-        System.out.println("Received Transaction: " + transaction);
+        System.out.println("Received Transaction: " + transactions);
     }
 }
